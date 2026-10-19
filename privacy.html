@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; Marginalia</title>
+<style>
+  :root { --bg:#faf7f1; --fg:#2b2520; --muted:#7a6f63; --rule:#e4dccd; --note:#f1ebe0; --accent:#8a5a2b; --bar:#b08d4f; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d1a17; --fg:#e9e2d6; --muted:#a3988a; --rule:#3a332c; --note:#2a2520; --accent:#d9a86c; --bar:#b08d4f; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 Charter, Georgia, 'Times New Roman', serif; }
+  main { max-width: 42em; margin: 0 auto; padding: 3.5em 1.4em 5em; }
+  h1 { font-size: 2em; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 0.2em; }
+  .sub { color: var(--muted); font-style: italic; margin: 0 0 2.5em; }
+  h2 { font-size: 1.15em; font-weight: 600; margin: 2.2em 0 0.5em; letter-spacing: 0.01em; }
+  ul { padding-left: 1.2em; }
+  li { margin: 0.35em 0; }
+  strong { font-weight: 600; }
+  .tldr { background: var(--note); border-left: 3px solid var(--bar); padding: 0.9em 1.1em; margin: 0 0 1em; }
+  a { color: var(--accent); }
+  nav.home a { display: block; font-size: 1.2em; margin: 0.6em 0; }
+  footer { margin-top: 3.5em; padding-top: 1.2em; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="sub">Marginalia &mdash; a reading notebook for iPhone, iPad, and Mac &middot; Last updated October 3, 2026</p>
+<p class="tldr"><strong>The short version:</strong> we have no servers and no accounts, and we never see your data. Everything lives on your devices and in your own iCloud.</p>
+<p>This Privacy Policy describes how Marginalia ("the App", "we", "us", or "our") handles your information. It covers the iPhone and iPad app, the Mac app, and their extensions: the share extensions, the reading widget, and the optional browser extension.</p>
+
+<h2>Data stored on your device</h2>
+<ul>
+<li>Books, PDFs, and articles you import or clip</li>
+<li>Highlights, notes, notebooks, bookmarks, flashcards, and drawings you create</li>
+<li>Reading progress, sessions, streaks, and statistics</li>
+<li>Your preferences (themes, typography, settings)</li>
+</ul>
+<p>This data is <strong>never sent to us</strong>. We do not operate any servers that receive your personal data.</p>
+
+<h2>iCloud sync (optional)</h2>
+<p>If iCloud is on, the App uses Apple's CloudKit, iCloud Drive, and iCloud key-value storage to sync your library, annotations, notebooks, and small preferences across your devices. This data lives in your personal iCloud account, is governed by <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a>, and we cannot access it.</p>
+
+<h2>Optional features that use the internet</h2>
+<p>Each happens only when you use the feature, and your device talks directly to the service. Nothing passes through us.</p>
+<ul>
+<li><strong>AI features (bring your own key).</strong> Summaries, questions about a book, riffs, study guides, quizzes, audio overviews, suggested tags and categories (these send a book's title and author), read-aloud text clean-up, and generated notebook covers require an API key you provide (Anthropic or OpenAI). The App asks before the first request to each provider. The relevant text goes from your device to the provider you chose, under your key and that provider's privacy policy. Keys are stored in the Keychain. We never see them, or your words.</li>
+<li><strong>Text-to-speech.</strong> The system voice and the Kokoro and PocketTTS voices run on your device; their voice models are downloaded once from Hugging Face when you choose them. Optional OpenAI or ElevenLabs voices send the text being read to that provider under your own key.</li>
+<li><strong>Voice notes and read-aloud alignment.</strong> The microphone is used only while you record. Speech recognition runs on your device when it supports that; otherwise the audio is processed by Apple's speech service under Apple's privacy policy.</li>
+<li><strong>Photo capture and text recognition.</strong> Photos of book pages are processed on your device with Apple's Vision framework and never leave it.</li>
+<li><strong>Web article capture.</strong> When you paste a link, use the share sheet, or click the browser extension, your device fetches that page and turns it into a readable article. The browser extension sends only the page's address to the App. It does not read or collect your browsing.</li>
+<li><strong>Book covers and author photos.</strong> Lookups to Open Library, Apple's iTunes Search, and Wikipedia contain only the title or author name being looked up.</li>
+<li><strong>Papers.</strong> When you add a paper, the App looks up its details by DOI or arXiv ID with Crossref and arXiv.</li>
+<li><strong>Free books (iPhone and iPad).</strong> If you turn on "Browse free books", the App browses the Project Gutenberg catalog and downloads the books you pick.</li>
+<li><strong>In-reader web search and site icons.</strong> Optional lookups use DuckDuckGo, including its site-icon service.</li>
+<li><strong>Weather (Mac ambiance).</strong> Queries Open-Meteo with a city you type. The App never uses GPS and never asks for your location.</li>
+<li><strong>Notion export.</strong> If you connect your own Notion token, only the notes you explicitly export are sent to your workspace.</li>
+<li><strong>Purchases.</strong> The free trial and the unlock go through Apple's App Store. We receive no payment or personal details.</li>
+</ul>
+
+<h2>Data we do not collect</h2>
+<ul>
+<li>No personal information: there are no accounts</li>
+<li>No usage analytics, telemetry, or crash reporting</li>
+<li>No advertising identifiers, SDKs, trackers, or fingerprinting</li>
+<li>No location data</li>
+<li>No selling, sharing, or renting of any data, ever</li>
+</ul>
+
+<h2>Storage and security</h2>
+<p>All data lives on your devices or in your personal iCloud account, protected by your device's built-in security. API keys are stored in the Keychain. The Mac app is sandboxed, and both apps can only reach files you select or import. We operate no servers and hold no copies of anything.</p>
+
+<h2>Children's privacy</h2>
+<p>The App does not knowingly collect data from children under 13. The App does not collect personal information from any user.</p>
+
+<h2>Your rights</h2>
+<p>Since we collect nothing, there is nothing for us to delete, export, or modify. Your data is entirely under your control, and the App can export everything you made. To delete all App data, delete the App from your devices. To delete synced data, remove Marginalia's data in your iCloud settings.</p>
+
+<h2>Changes to this policy</h2>
+<p>Updates will be posted on this page with a new date above. Continued use of the App after changes means you accept the updated policy.</p>
+
+<h2>Contact us</h2>
+<p>Questions about this Privacy Policy: <a href="mailto:pierateprenticetheprince@gmail.com">pierateprenticetheprince@gmail.com</a></p>
+<footer>&copy; 2026 Pierate &middot; <a href="./">Marginalia</a> &middot; <a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Use</a></footer>
+</main>
+</body>
+</html>
